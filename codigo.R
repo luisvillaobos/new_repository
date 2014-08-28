@@ -23,3 +23,9 @@ lines(x,y2, col="red")
 valor=function(x){
   -(x^alpha+(T-x)^beta)  
 }
+
+
+
+optimize(f=valor, lower=0, upper=T, 
+         maximum=F)
+optim(par=500, fn=valor)
